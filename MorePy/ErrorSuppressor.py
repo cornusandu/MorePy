@@ -12,5 +12,5 @@ class ErrorSuppressor:
             return True
         return False
 
-def CreateErrorSuppressor(*errors: Exception | BaseException | type) -> SuppressErrors:
+def CreateErrorSuppressor(*errors: Exception | BaseException | type) -> ErrorSuppressor:
     return ErrorSuppressor(tuple(errors))

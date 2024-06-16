@@ -1,3 +1,6 @@
+"""This module is meant to help you create tables or two-dimensional data structures"""
+
+import numpy as np
 from typing import Any, Self
 from enum import (Enum, auto)
 
@@ -54,3 +57,12 @@ class Matrix:
             toAdd[k] = v
         self.data[int(max(list(self.data.keys())))] = toAdd
         return self
+
+    def __repr__(self) -> np.array:
+        DATA: list = [column.name for column in self.columns]
+        for ID, value in self.data.items():
+            ToAdd = [ID]
+            for _, v in value.items():
+                ToAdd.append(v)
+            DATA.extend(ToAdd)
+        return np.array(DATA)
