@@ -26,3 +26,13 @@ The `HashMap` class should just be initialized with a dictionary or two lists, a
 ### ErrorSuppressor
 The `ErrorSuppressor` class is made to be used as a context manager.
 Syntax: `ErrorSuppressor(errors: tuple[Exception] = ())`
+### sum_of_array(array: np.ndarray)
+Returns the sum of all items in an array
+### sum_of_arange(arange: np.arange)
+Self-Explanatory
+### sum_of_range(Range: range)
+Self-Explanatory
+### execute(command: str)
+Execute a console command. (Command behavior may differ based on the operating system)
+Is equivalent to doing `os.sys()`
+Can also be used as `execute(*commands: str)` to run multiple consecutive commands
