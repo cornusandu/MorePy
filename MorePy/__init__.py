@@ -15,3 +15,5 @@ from . import MoreTypes
 from .MoreTypes import HashMaps, Matrixes
 from .MoreTypes.HashMaps import HashMap
 from .MoreTypes.Matrixes import Matrix, ColumnTypes, Column
+from .Sums import *
+import MoreConsole as Console
